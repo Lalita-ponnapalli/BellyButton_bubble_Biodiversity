@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color:rgba(208, 220, 169, 0.607)" >
+
+  <div class="container">
+    <div class="row">
+     <div class="jumbotron" style="background: url(http://robdunnlab.com/wp-content/uploads/microbes-sem.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      </div>
+          <h1 style="font-family:verdana;font-weight:bold;color: chocolate;">Belly Button Biodiversity Dashboard</h1>
+        <p style="font-family:verdana;font-weight:bold">Use the interactive charts below to explore the dataset</p>
+        <p></p> The scientists grew the bacteria from hundreds of swab samples and found that most people's belly button ecosystems are unique. They found 2,368 types of bacteria, with 2,188 present on fewer than 10 percent of the samples. In this project volunteers should be identify the top 10 bacterial species in their belly button.
+
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+        <p ></p>	Horizontal bar chart with a dropdown menu to display the top 10 OTUs found.	Bar chart contains Sample_values as values, out_ids as lables, and out_lables as the hovertext.Chart get updated for each sample selected. </p>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+        <p></p>Gauge chart to plot the weekly washing frequency of the sample. Chart get updated for each sample selected.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <p></p>Bubble chart that displays each sample. Shows otu_ids for the x values, sample_values for the y values, sample_values for the marker size, otu_ids for the marker colors, and otu_labels for the text values.Chart get updated for each sample selected.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script src="plots.js"></script> -->
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
