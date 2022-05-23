@@ -7,4 +7,5 @@
 
 ##Gauge chart to plot the weekly washing frequency of the sample. Chart get updated for each sample selected.
 Bubble chart that displays each sample. Shows otu_ids for the x values, sample_values for the y values, sample_values for the marker size, otu_ids for the marker colors, and otu_labels for the text values.Chart get updated for each sample selected.
-http://127.0.0.1:5500/BellyButton_bubble_biodiversity/Static.js/index.html
+
+Link to the Charts: http://127.0.0.1:5500/BellyButton_bubble_biodiversity/Static.js/index.html
